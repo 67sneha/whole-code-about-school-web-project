@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             background-color: skyblue; background-attachment: fixed; 
+        }
+        #adddiv {
+            border: 2px none rgb(0, 0, 0);
+            height: 110vh;
+            width: 80%;
+            margin: auto; 
+            background-image: url("gallery/");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #adhead {
+            text-align: center;
+            font-weight: 900;
+            font-size: 40px;
+            color:darkblue;
+        }
+
+        #addpara {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(229, 229, 241);
+        }
+        #lable1{
+            color:black; font-size: 29px; line-height: 40px; font-weight: 900;
+            
+        }
+        #spn{
+            color:black; font-size:19px; font-weight: 900;
+        }
+        #inp{
+            width:40%; margin-top: 30px; border:2px none;
+            margin-left: 50px;  line-height: 20px;
+            
+        }
+        #select{
+            width:40%; float: inline-end; border:2px none;
+            margin-top: -582px; margin-left: 680px;  line-height: 39px;
+        }
+        #inpo1{
+            height:30px; width:69%; background-color: transparent;
+            font-weight: 900; border:2px outset black;
+        }
+        #sel{
+            height:36px; width:70%; background-color: white; background-color:transparent; font-weight: 900;
+           
+        }
+        #radio{
+            height:20px; width:20px; font-weight: 900;
+        }
+        #inpo1::placeholder{
+            font-size:16px; font-weight: 900;
+        }
+        #opt{
+            font-size: 40px;  font-weight: 900;
+        }
+        #btnpara{
+            border:2px none black;  margin-top: 0px;
+            height:50px; float:right; padding-right:180px; font-weight: 900;
+         }
+         #logbt1{
+            padding:12px; font-size: 20px; height:50px; width:100px;
+            color: navy; font-weight: bolder; border-radius:20px; font-weight: 900;
+        }
+        #texArea{
+            background-color:transparent; font-weight: 900;
+        }
+         
+        </style>
+</head>
+
+<body>
+    <div id="adddiv">
+        <h1 id="adhead">Application Form</h1>
+        <p id="addpara">Global Online Admission Form Fee Structure Enquiry Form</p>
+        <form action="" mathod="post">
+            <div id="inp">
+                <p id="para"><label for="" id="lable1">Stuent Name*</label><br>
+                <input type="text" id="inpo1" placeholder="Enter name"></p>
+                <p id="para">
+                    <label for="" id="lable1">Email ID*</label><br>
+                <input type="text"  id="inpo1" placeholder="Enter Email ID">
+                </p>
+                <p id="para">
+                    <label for="" id="lable1"> Contact No*</label><br>
+                <input type="text"  id="inpo1"  placeholder="Contact number">
+                </p>
+                <p id="para">
+                    <label for="" id="lable1">Gender*</label><br>
+                <input type="radio" id="radio" ><span id="spn">Male</span>
+                <input type="radio" id="radio"><span id="spn">Female</span>
+                </p>
+                <p id="para">
+                    <label for="" id="lable1">Date of birth*</label> <br>
+                <input type="text" id="inpo1" placeholder="dd-mm-yyyy">
+                </p>
+                
+                <p id="para">
+                    <label for="" id="lable1">Hobbies*</label> <br>
+                <input type="checkbox" id="radio"><span id="spn">Drawing</span>
+                <input type="checkbox" id="radio"><span id="spn">Singing </span>
+                <input type="checkbox" id="radio"><span id="spn">Dancing</span><br><br>
+                <input type="checkbox" id="radio"><span id="spn">Sketching</span>
+                <input type="checkbox" id="radio"><span id="spn">sculpting</span>
+                </p>
+            </div>
+            <div id="select">
+                <p id="para"><label for="" id="lable1">Grade*</label> <br>
+                <select name="" id="sel">
+                    <option value="1" id="opt">~Select Class</option>
+                    <option value="2">Nursery</option>
+                    <option value="3">K1</option>
+                    <option value="4">K2</option>
+                    <option value="5">LKG</option>
+                    <option value="6">UKG</option>
+                    <option value="7">Grade1</option>
+                    <option value="op8">Grade2</option>
+                    <option value="op9">Grade3</option>
+                    <option value="op10">Grade4</option>
+                    <option value="op11">Grade5</option>
+                    <option value="op12">Grade6</option>
+                    <option value="op13">Grade7</option>
+                    <option value="op14">Grade8</option>
+                    <option value="op15">Grade9</option>
+                    <option value="op16">Grade10</option>
+                    <option value="op17">Grade11</option>
+                    <option value="op18">Grade12</option>
+                </select>
+            </p>
+            <p id="para">
+                <label for="" id="lable1">City*</label><br>
+                <select name="" id="sel">
+                    <option value="ct1" id="opt">Select City</option>
+                    <option value="ct2">Indore</option>
+                    <option value="ct3">Bhopal</option>
+                    <option value="ct4">Jabalpur</option>
+                    <option value="ct5">Ujjain</option>
+                    <option value="ct6">Nagpur</option>
+                    <option value="ct7">Dewas</option>
+                </select>
+            </p>
+            <p id="para"><label for="" id="lable1">State*</label><br>
+                <select name="" id="sel">
+                    <option value="st1" id="opt">Select state</option>
+                    <option value="st2">Madhaya Pradesh</option>
+                    <option value="st3">Uttar Pradesh</option>
+                    <option value="st4">Maharastra</option>
+                    <option value="st5">Rajasthan</option>
+                    <option value="st6">Gujrat</option>
+                    <option value="st7">Kolkata</option>
+                </select></p>
+            <p id="para">
+                <label for="" id="lable1">Pin Code*</label> <br>
+                <input type="text" id="inpo1"  placeholder="Pin  Code">
+            </p>
+            <p id="para">
+                <label for="" id="lable1">Address*</label><br>
+            <textarea name="" id="texArea" cols="47" rows="8"></textarea>
+            </p>
+            </div>
+            <p id="btnpara">
+                <button id="logbt1">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button  id="logbt1">Reset</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

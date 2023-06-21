@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+       }
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background: #f6fbff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .yeeh1 {
+        font-size: 30px;
+        position:relative;
+        color:rgb(17, 7, 59);
+    }
+    .yeeh1::after {
+        content: '';
+        width: 150px;
+        height: 3px;
+        background: linear-gradient(to right, #f44336, #9f4db5);
+        position: absolute;
+        bottom: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .review-box {
+        width: 90%;
+        max-width: 700px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.25);
+        position: relative;
+        overflow: hidden;
+
+    }
+    .cardee {
+        height: 300px;
+        padding: 40px;
+        color: #777;
+        line-height: border-box;
+        box-sizing: border-box;
+        background: #fff;
+        position: relative;
+        z-index: 1s;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .profile img {
+        width: 70px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .profile h3 {
+        font-size: 26px;
+        color: #f44336;
+        margin-bottom: 8px;
+    }
+    #yeeslide {
+        width: 100%;
+        padding-right: 60px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    .yeesidebar {
+        width: 60px;
+        height: 100%;
+        padding: 15px 0;
+        box-sizing: border-box;
+        background: #f44336;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .yeesidebar img {
+        width: 55px;
+        padding: 5px;
+        background: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .cardee::before {
+        content: '';
+        width: 110px;
+        height: 110px;
+        border-bottom-right-radius: 100%;
+        background: #f44336;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    ::selection {
+        background: #f44336;
+        color: #fff;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="review-box">
+            <div id="yeeslide">
+                <div class="cardee">
+                    <div class="profile">
+                        <img src="gallery/parent1.jpg">
+                        <div>
+                            <h3>Mrs.Suruchi Gupta </h3>
+                            <p> M/o Anushree Gupta</p>
+                        </div>
+                    </div>
+                    <p> I am Mrs.Suruchi Gupta. My daughter Anushree Gupta is in class 7th (Global International School,
+                        Prime Nagar ).We are greatly appreciating to all Respected Teachers & GIS Team for their extra pain
+                         & efforts they are giving in online classes & conducting online Exams......, 
+                         For last 9 years we are getting 24 X 7 & 365 days support & encouragement by Teachers.
+                        In-spite of having doubt classes of every subject, Teachers are clearing the doubts early in the
+                         morning & till late night on their personal watsapp also. 
+                    </p>
+                </div>
+                <div class="cardee">
+                    <div class="profile">
+                        <img src="gallery/parent2.jpg">
+                        <div>
+                            <h3> Pallavi Rao</h3>
+                            <p>M/o Lucky Rao</p>
+                        </div>
+                    </div>
+                    <p>My son is an alumnus from the Batch of ‘17 (currently pursuing BTech in Computer Science
+                         and Engineering). I've seen the teachers working so hard along with each
+                          and every student under the able guidance and steering force of learned and experienced principals 
+                          Dr. Jaishree Kanwar and Dr. Pankaj Sharma ma’am. The decisions taken by the management
+                           of the school are so meticulously planned for the all-round development of the children
+                            be it in social, cultural, moral, or holistic development. 
+                    </p>
+                </div>
+                <div class="cardee">
+                    <div class="profile">
+                        <img src="gallery/parent3.jpg">
+                        <div>
+                            <h3>Mr.Atul Moghe  </h3>
+                            <p>F/o Atharv Moghe </p>
+                        </div>
+                    </div>
+                    <p> This is with concern of my ward Atharv Moghe. 
+                        The school has taken a very beneficial initiative for continuation of students academic
+                         progress irrespective of the global pandemic situation. The processing of school with
+                          online teaching, regular assessing of students, teachers concern for very particulars
+                           of each and every student, along with the regular interactions with parents had made
+                            it seem no less than regular schooling of the child. Actually, my son has improved 
+                            his performance a lot as compared to previous year. 
+                    </p>
+                </div>
+                <div class="cardee">
+                    <div class="profile">
+                        <img src="gallery/parent4.jpg">
+                        <div>
+                            <h3>Mrs.Amrita Singh</h3>
+                            <p>M/o Akansha Singh </p>
+                        </div>  
+                     </div>
+                    <p>I sincerely thank each one of you for your constant support 
+                        and help to reach out to all the students. Your efforts are admirable.
+                         The students could gain knowledge even in this tough time.
+                         May God bless each of you with abundance happiness and success.
+                    </p>
+                </div>
+            </div>
+            <div class="yeesidebar">
+                <img src="gallery/up arrow" id="uparrow">
+                <img src="gallery/down arrow.jpg" id="downarrow">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    var slide = document.getElementById("yeeslide");
+    var uparrow = document.getElementById("uparrow");
+    var downarrow = document.getElementById("downarrow");
+    let x = 0;
+    uparrow.onclick = function () {
+        if (x > "-900") {
+            x = x - 300;
+            slide.style.top = x + "px";
+        }
+    }
+    downarrow.onclick = function () {
+        if (x < "0") {
+            x = x + 300;
+            slide.style.top = x + "px";
+        }
+    }
+</script>
+</html>

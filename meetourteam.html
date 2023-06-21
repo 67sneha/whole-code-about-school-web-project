@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/school.css">
+    <style>
+    *{
+        /* box-sizing: border-box;  */
+}
+body{
+    background: url(gallery/background6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.flex{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.inner{
+   max-width: 1400px;
+   margin: 0 auto;
+}
+img{
+   height: 250px;
+   width: 450px;
+}
+.meetteam{
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   align-items: center;
+}
+.headingmeet{
+   width: 100%;
+   padding-top: 80px;
+}
+.headingmeet h2{
+   font-size: 40px;
+   color: white;
+}
+.headingmeet p{
+   font-size: 25px;
+   color: white;
+}
+.team-wrap{
+   width:22%;
+   margin-top: 120px;
+}
+.team-img img{
+   -webkit-transition: all .2s ease-in-out;
+   overflow: hidden;
+   width: 100%;
+}
+.team-member, .team-img{
+   position: relative;
+   overflow: hidden;
+}
+.team-title{
+   margin: 30px 0 7px;
+   font-size: 20px;
+}
+.team-title{
+    color: white;
+    font-size: 25px;
+}
+span{
+    color: white;
+}
+.overlay{
+   background-color: rgb(20,20,20,0.7);
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+}
+.team-details{
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   padding: 5%;
+   overflow: hidden;
+   width: 100%;
+   z-index: 2;
+   -webkit-transition: all 0.2s ease-in-out;
+}
+.team-details p{
+   color: white;
+}
+.team-img:hover .team-details{
+   opacity: 1;
+   margin-top: -80px;
+}
+.team-img:hover .overlay{
+   opacity: 1;
+}
+.socials a{
+   display: inline-block;
+   width: 37px;
+   height: 37px;
+   background-color: transparent;
+}
+.socials span{
+   line-height: 37px;
+   color: gray;
+   font-size: 14px;
+   width: 37px;
+   height: 37px;
+   border-radius: 50%;
+   text-align: center;
+   -webkit-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+    </style>
+</head>
+<body>
+     
+    <div class="meetteam">
+        <div class="headingmeet">
+            <h2>MEET OUR TEAM</h2>
+            <p>ALWAYS TOGETHER</p>
+        </div>
+
+        <div class="main-box inner flex">
+            <div class="team-wrap">
+                <div class="team-member text-center">
+                    <div class="team-img">
+                        <img src="gallery/manish sir.jpg" alt="">
+                        <div class="overlay">
+                            <div class="team-details text-center">
+                                <p>Mr. Manish Tiwari (Chairman) </p>
+                                    <div class="socials mt-20">
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                        <a href="#"><span class="fa fa-instagram"></span></a>
+                                        <a href="#"><span class="fa fa-envelope"></span></a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="team-title"> Mr. Manish Tiwari</h6>
+                    <span>(Chairman)</span>
+                </div>
+         </div>
+          <!-- end team member -->
+          <div class="team-wrap">
+            <div class="team-member text-center">
+                <div class="team-img">
+                    <img src="gallery/sunil sir.jpg" alt="">
+                    <div class="overlay">
+                        <div class="team-details text-center">
+                            <p>Mr. Sunil Mishra(Managing Director of GIS)</p>
+                                <div class="socials mt-20">
+                                    <a href="#"><span class="fa fa-facebook"></span></a>
+                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                    <a href="#"><span class="fa fa-instagram"></span></a>
+                                    <a href="#"><span class="fa fa-envelope"></span></a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="team-title">Mr. Sunil Mishra</h6>
+                <span>(Managing Director of GIS)</span>
+            </div>
+     </div>
+      <!-- end team member -->
+      <div class="team-wrap">
+        <div class="team-member text-center">
+            <div class="team-img">
+                <img src="gallery/mona mam.jpg" alt="">
+                <div class="overlay">
+                    <div class="team-details text-center">
+                        <p>Mrs.Mona Khare(Director,GIS)</p>
+                            <div class="socials mt-20">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                                <a href="#"><span class="fa fa-envelope"></span></a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <h6 class="team-title">Mrs.Mona Khare</h6>
+            <span>(Director,GIS)</span>
+        </div>
+ </div>
+  <!-- end team member -->
+  <div class="team-wrap">
+    <div class="team-member text-center">
+        <div class="team-img">
+            <img src="gallery/pricipal sir.jpg" alt="">
+            <div class="overlay">
+                <div class="team-details text-center">
+                    <p>Mr.Rajeev Khare(Principal,GIS Prime Nagar)</p>
+                        <div class="socials mt-20">
+                            <a href="#"><span class="fa fa-facebook"></span></a>
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                            <a href="#"><span class="fa fa-instagram"></span></a>
+                            <a href="#"><span class="fa fa-envelope"></span></a>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <h6 class="team-title">Mr.Rajeev Khare</h6>
+        <span>(Principal,GIS Prime Nagar)</span>
+    </div>
+</div>
+<!-- end team member -->
+<div class="team-wrap">
+    <div class="team-member text-center">
+        <div class="team-img">
+            <img src="gallery/bhargava sir.jpg" alt="">
+            <div class="overlay">
+                <div class="team-details text-center">
+        <h6 class="team-title"></h6>
+        <p>Mr.Sanjay Bhargava(Vice Principal, GIS Prime Nagar)</p>
+                        <div class="socials mt-20">
+                            <a href="#"><span class="fa fa-facebook"></span></a>
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                            <a href="#"><span class="fa fa-instagram"></span></a>
+                            <a href="#"><span class="fa fa-envelope"></span></a>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <h6 class="team-title">Mr.Sanjay Bhargava</h6>
+        <span>(Vice Principal, GIS Prime Nagar)</span>
+    </div>
+</div>
+<!-- end team member -->
+<div class="team-wrap">
+<div class="team-member text-center">
+    <div class="team-img">
+        <img src="gallery/rahulsir.jpg" alt="">
+        <div class="overlay">
+            <div class="team-details text-center">
+                <p>Mr.Rahul Morchhale(HOD of Computer Department)</p>
+                    <div class="socials mt-20">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-instagram"></span></a>
+                        <a href="#"><span class="fa fa-envelope"></span></a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <h6 class="team-title">Mr.Rahul Morchhale</h6>
+    <span>(HOD of Computer Department)</span>
+</div>
+</div>
+<!-- end team member -->
+<div class="team-wrap">
+<div class="team-member text-center">
+<div class="team-img">
+    <img src="gallery/pranshu mam1.jpg" alt="" height="300px" width="200px">
+    <div class="overlay">
+        <div class="team-details text-center">
+            <p>Miss.Pranshu Pare(Assistant Professor Of Computer Department)</p>
+                <div class="socials mt-20">
+                    <a href="#"><span class="fa fa-facebook"></span></a>
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-instagram"></span></a>
+                    <a href="#"><span class="fa fa-envelope"></span></a>
+             </div>
+        </div>
+    </div>
+</div>
+<h6 class="team-title">Miss.Pranshu Pare</h6>
+<span>(Assistant Professor Of Computer Department)</span>
+</div>
+</div>
+<!-- end team member -->
+<div class="team-wrap">
+<div class="team-member text-center">
+<div class="team-img">
+<img src="gallery/sudershansir.jpg" alt="">
+<div class="overlay">
+    <div class="team-details text-center">
+        <p>Mr.Sudarshan Gour(Lab Assistant of GIS)</p>
+            <div class="socials mt-20">
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-envelope"></span></a>
+         </div>
+    </div>
+</div>
+</div>
+<h6 class="team-title">Mr.Sudarshan Gour</h6>
+<span>(Lab Assistant of GIS)</span>
+</div>
+</div>
+<!-- end team member -->
+    </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,30 @@
+.buy{
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+    .buy:hover{
+        background-color: brown;
+        color: white;
+        font-size: 15px;
+        border-color: 2px solid black;
+    }
+.book{
+    border:1px solid black ;
+}
+.libraryimg{
+    height: 300px;
+    width: 220px;
+    border: 2px red;
+    padding:7px;
+}
+    .libraryimg:hover{
+     box-shadow:0 0 50px 1px brown; 
+    }
+.td11{
+    padding: 15px;
+    text-decoration: underline;    
+    font-size: 30px;
+    text-shadow: 1px 1px 5px red;
+}
